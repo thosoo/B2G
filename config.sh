@@ -77,7 +77,7 @@ echo DEVICE_NAME=$1 >> .tmp-config
 case "$1" in
 "bravo")
 	echo DEVICE=bravo >> .tmp-config &&
-	repo_sync bravo
+	repo_sync $1
 	;;
 
 "galaxy-s2")
